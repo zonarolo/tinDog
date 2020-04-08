@@ -1,55 +1,39 @@
-
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat-Bold';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
 p {
   color: #8f8f8f;
 }
 
-/* Navigation Bar */
-.navbar {
-  padding: 0 0 4.5rem;
-}
-
-.navbar-brand {
-  font-size: 2.5rem;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
-}
-
-.nav-item {
-  padding: 0 18px;
-}
-
-.nav-link {
-  font-size: 1.2rem;
-  font-family: 'Montserrat-Light';
-}
-
-#title .container-fluid {
-  padding: 3% 15% 7%;
-}
-
+/* HEADINGS */
 .big-heading {
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   font-size: 3.5rem;
-  font-weight: 700;
-  text-align: left;
+  font-weight: 900;
 }
 
-.container-fluid{
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
   padding: 7% 15%;
 }
 
 /* Sections */
-
 .colored-section {
   background-color: #ff4c68;
   color: #fff;
@@ -59,17 +43,48 @@ p {
   background-color: #fff;
 }
 
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
 /* Download Buttons*/
 .download-button {
   margin: 5% 3% 5% 0;
 }
 
+/* Title section */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* First Image */
 .first-img {
   width: 60%;
-  transform: rotate(25Deg);
+  transform: rotate(25deg);
   right: 30%;
-  position:absolute;
+  position: absolute;
 }
 
 /* Features */
@@ -81,6 +96,10 @@ p {
   font-size: 1.5rem;
 }
 
+.features-div {
+  padding: 4.5%;
+}
+
 .icon {
   color: #ef8172;
   margin-bottom: 1rem;
@@ -88,10 +107,6 @@ p {
 
 .icon:hover {
   color: #ff4c68;
-}
-
-.features-div {
-  padding: 4.5%;
 }
 
 /* Testimonials  Section */
@@ -133,27 +148,14 @@ p {
 .pricing-column {
   padding: 3% 2%;
 }
-#cta {
-  padding: 5% 0 2%;
 
-}
-/* CTA */
-.cta-heading {
-  font-size: 3.5rem;
-  font-weight: 700;
-  width: 65%;
-  margin: auto;
-  line-height: 1.5;
-}
+/* CTA Section */
 
 /* Footer */
-#footer {
-  padding: 5% 0;
-}
 
 #footer .icon {
   color: gray;
-  padding: 2%;
+  margin: 20px 10px;
 }
 
 #footer .icon:hover {
@@ -163,11 +165,12 @@ p {
 /* Media Querys */
 
 @media (max-width: 1028px) {
-  .big-heading {
+  #title {
     text-align: center;
   }
+
   .first-img {
     position: static;
-    transform: rotare(0);
+    transform: rotate(0);
   }
 }
